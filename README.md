@@ -1,2 +1,2 @@
 # matlab-uebungen
-Übungen für MATÖAB
+Übungen für MATLAB
