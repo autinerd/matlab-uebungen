@@ -4,7 +4,7 @@ end
 fprintf("Aufgabe 1:\n")
 M = vec2mat(1:9,3)
 k = 2.75
-w = -1.^(2:5).*(1:4).^-1
+w = ((-1).^(2:5).*(1:4).^-1).'
 y = 1.0:0.5:100.5
 fprintf("Aufgabe 2 a:\n")
 N = repmat(M,2)
