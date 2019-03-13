@@ -39,8 +39,7 @@ fprintf("Aufgabe 7:\n")
 fliplr(cart2pol(K(:,1),K(:,2)))
 fprintf("Aufgabe 8:\n")
 t = 0:0.1:10
-clear e;
-s = sin(2*pi*t).*cos(3*pi*t)+e.^(-0.1*t)
+s = sin(2*pi*t).*cos(3*pi*t)+exp(-0.1*t)
 fprintf("Aufgabe 10:\n")
 x = 1:3;
 y = -1:1;
@@ -52,5 +51,5 @@ try
 catch
 	fprintf("Aufgabe 10 d nicht lösbar.")
 end
-e1 = x.' * y
+e = x.' * y
 f = x * y.'
