@@ -4,7 +4,7 @@ function o = sunspot()
 	end
 	[year,month,ssn,dev] = textread('./spot_num.txt','%u %u %f %f','headerlines',1);
 	clear dev;
-	times = ((year - 1749) .* 12 + month) / 12;
+	times = (year - 1749) + (month / 12);
 	Samples = size(ssn)(1);
 	Fs = 12;
 	T = 1/12;
